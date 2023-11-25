@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         body {
             margin: 0;
@@ -26,6 +30,7 @@
             object-fit: cover; 
             z-index: -1; 
         }
+        
        /* nav {
             color: black;
            opacity: 2;
@@ -35,8 +40,41 @@
             top:0px;
             transition: top 0.3s; /* Add smooth transition effect 
         } */
-        
-  
+        .rounded-circle {
+    border-radius: 50% !important;
+}
+.imgabout {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.sub-info{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #004975;
+}
+
+.display-30 {
+    font-size: 0.9rem;
+}
+
+.btnread {
+  position: absolute;
+  top: 85%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: rgb(43, 41, 41);
+  font-size: 20px;
+  padding: 12px 60px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+  .btnread:hover{
+    background-color: #fff;
+  }
     </style>
 </head>
 <body>
@@ -49,22 +87,22 @@
         </ul>
     </nav> -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">ML.CO</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Services
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -74,12 +112,13 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#">Contact Us</a>
               </li>
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+             <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+              <button class="btn btn-outline-success" type="submit">Login</button>
+              <button class="btn btn-outline-success ms-2" type="submit">Sign Up</button>
             </form>
           </div>
         </div>
@@ -87,11 +126,458 @@
 
     <div class="banner">
         <video autoplay muted loop>
-            <source src="ML.CO.mp4" type="video/mp4"> 
+            <source src="banner.mp4" type="video/mp4"> 
         </video>
+        <a  href="login.html" class="text-decoration-none btn btnread btn-rounded" onclick="">Get Started</a>
     </div>
+    <div class="container mt-4">
+      <div class="text-center mb-2-8 mb-lg-6">
+          <h2 class="display-18 display-md-16 display-lg-14 font-weight-700">Why choose <strong class="text-primary font-weight-700">Us</strong></h2>
+          <span>The trusted source for why choose us</span>
+      </div>
+      <div class="row align-items-center">
+          <div class="col-sm-6 col-lg-4 mb-2-9 mb-sm-0">
+              <div class="pr-md-3">
+                  <div class="text-center text-sm-right mb-2-9">
+                      <div class="mb-4">
+                          <img src="about1.jpg" alt="..." class="rounded-circle">
+                      </div>
+                      <h4 class="sub-info">Consultancy</h4>
+                      <p class="display-30 mb-0">Roin gravida nibh vel velit auctor aliquetenean sollicitudin, lorem qui bibendum auctor.</p>
+                  </div>
+                  <div class="text-center text-sm-right">
+                      <div class="mb-4">
+                          <img src="about2.jpg" alt="..." class="rounded-circle">
+                      </div>
+                      <h4 class="sub-info">Website provider</h4>
+                      <p class="display-30 mb-0">Gravida roin nibh vel velit auctor aliquetenean sollicitudin, lorem qui bibendum auctor.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 d-none d-lg-block">
+              <div class="why-choose-center-image">
+                  <img src="about3.jpg"  height="350px" width="350px" alt="..." class="rounded-circle">
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+              <div class="pl-md-3">
+                  <div class="text-center text-sm-left mb-2-9">
+                      <div class="mb-4">
+                          <img src="about4.jpg" alt="..." class="rounded-circle">
+                      </div>
+                      <h4 class="sub-info"> services</h4>
+                      <p class="display-30 mb-0">Nibh roin gravida vel velit auctor aliquetenean sollicitudin, lorem qui bibendum auctor.</p>
+                  </div>
+  
+                  <div class="text-center text-sm-left">
+                      <div class="mb-4">
+                          <img src="about5.jpg" alt="..." class="rounded-circle">
+                      </div>
+                      <h4 class="sub-info">Projects</h4>
+                      <p class="display-30 mb-0">Vel proin gravida nibh velit auctor aliquetenean sollicitudin, lorem qui bibendum auctor.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    
 
- <img src="2.png" />
+
+
+
+
+
+  <div class="container mt-5 mb-4 pt-5">
+    <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 opt-sm-0">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-6">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                            <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                                <img src="about1.jpg" class="img-fluid" alt="Image" />
+                                <div class="img-overlay bg-dark"></div>
+                            </div>
+                        </div>
+                        <!--end col-->
+
+                        <div class="col-12">
+                            <div class="mt-4 pt-2 text-right">
+                                <a href="javascript:void(0)" class="btn btn-info">Read More <i class="mdi mdi-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-6 col-md-6 col-6">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                                <img src="about2.jpg" class="img-fluid" alt="Image" />
+                                <div class="img-overlay bg-dark"></div>
+                            </div>
+                        </div>
+                        <!--end col-->
+
+                        <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                            <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                                <img src="about3.jpg" class="img-fluid" alt="Image" />
+                                <div class="img-overlay bg-dark"></div>
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end col-->
+
+        <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2">
+            <div class="section-title ml-lg-5">
+                <h2 class="text-custom font-weight-normal mb-3">About Us</h2>
+                <h4 class="title mb-4">
+                    Our mission is to <br />
+                    make your life easier.
+                </h4>
+                <p class="text-muted mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit quod debitis praesentium pariatur temporibus ipsa, cum quidem obcaecati sunt?</p>
+
+                <div class="row">
+                    <div class="col-lg-6 mt-4 pt-2">
+                        <div class="media align-items-center rounded shadow p-3">
+                            <i class="fa fa-play h4 mb-0 text-custom"></i>
+                            <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Responsive</a></h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 pt-2">
+                        <div class="media align-items-center rounded shadow p-3">
+                            <i class="fa fa-file-download h4 mb-0 text-custom"></i>
+                            <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Free Download</a></h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 pt-2">
+                        <div class="media align-items-center rounded shadow p-3">
+                            <i class="fa fa-user h4 mb-0 text-custom"></i>
+                            <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Support</a></h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 pt-2">
+                        <div class="media align-items-center rounded shadow p-3">
+                            <i class="fa fa-image h4 mb-0 text-custom"></i>
+                            <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Development</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end col-->
+    </div>
+    <!--enr row-->
+</div>
+
+
+
+
+
+
+
+
+
+<!--contact us-->
+<div class="container mt-5">
+
+ 
+  <!--Section: Content-->
+  <section class="dark-grey-text mb-5">
+    
+    <style>
+      .map-container-section {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+      }
+      .map-container-section iframe {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+      }
+    </style>
+
+    <!-- Section heading -->
+    <h3 class="font-weight-bold text-center mb-4">Contact Us</h3>
+  
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-lg-5 mb-lg-0 pb-lg-3 mb-4">
+
+        <!-- Form with header -->
+        <div class="card">
+          <div class="card-body">
+            <!-- Header -->
+            <div class="form-header blue accent-1">
+              <h3 class="mt-2"><i class="fas fa-envelope"></i> Write to us:</h3>
+            </div>
+            <p class="dark-grey-text">We'll write rarely, but only the best content.</p>
+            <!-- Body -->
+            <div class="md-form">
+              <i class="fas fa-user prefix grey-text"></i>
+              <input type="text" id="form-name" class="form-control">
+              <label for="form-name">Your name</label>
+            </div>
+            <div class="md-form">
+              <i class="fas fa-envelope prefix grey-text"></i>
+              <input type="text" id="form-email" class="form-control">
+              <label for="form-email">Your email</label>
+            </div>
+            <div class="md-form">
+              <i class="fas fa-tag prefix grey-text"></i>
+              <input type="text" id="form-Subject" class="form-control">
+              <label for="form-Subject">Subject</label>
+            </div>
+            <div class="md-form">
+              <i class="fas fa-pencil-alt prefix grey-text"></i>
+              <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+              <label for="form-text">Send message</label>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-light-blue">Submit</button>
+            </div>
+          </div>
+        </div>
+        <!-- Form with header -->
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-7">
+
+        <!--Google map-->
+        <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+          <iframe src="https://maps.google.com/maps?q=Manhatan&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            style="border:0" allowfullscreen></iframe>
+        </div>
+        <!-- Buttons-->
+        <div class="row text-center">
+          <div class="col-md-4">
+            <a class="btn-floating blue accent-1">
+              <i class="fas fa-map-marker-alt"></i>
+            </a>
+            <p>New York, 94126</p>
+            <p class="mb-md-0">United States</p>
+          </div>
+          <div class="col-md-4">
+            <a class="btn-floating blue accent-1">
+              <i class="fas fa-phone"></i>
+            </a>
+            <p>+ 01 234 567 89</p>
+            <p class="mb-md-0">Mon - Fri, 8:00-22:00</p>
+          </div>
+          <div class="col-md-4">
+            <a class="btn-floating blue accent-1">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <p>info@gmail.com</p>
+            <p class="mb-0">sale@gmail.com</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!--Section: Content-->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #1c2331"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-between p-4"
+             style="background-color: #6351ce"
+             >
+      <!-- Left -->
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class=" me-4">
+          <i class="fab fa-facebook-f text-white"></i>
+        </a>
+        <a href="" class=" me-4">
+          <i class="fab fa-twitter text-white"></i>
+        </a>
+        <a href="" class="me-4">
+          <i class="fab fa-google text-white"></i>
+        </a>
+        <a href="" class=" me-4">
+          <i class="fab fa-instagram text-white"></i>
+        </a>
+        <a href="" class=" me-4">
+          <i class="fab fa-linkedin text-white"></i>
+        </a>
+        <a href="" class=" me-4">
+          <i class="fab fa-github text-white"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Company name</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              Here you can use rows and columns to organize your footer
+              content. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">MDBootstrap</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">MDWordPress</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">BrandFlow</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Bootstrap Angular</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p><i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+            <p><i class="fa fa-envelope mr-3"></i> info@example.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >MDBootstrap.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  
+  <script>
+    AOS.init();
+    AOS.refresh(); // initialize AOS animations
+    $(document).ready(function(){
+        $("body,html").animate({
+            scrollTop: 10
+        }, 1000);
+        $("body,html").animate({
+            scrollTop: 0
+        }, 1);
+    });
+</script>
+<!-- End of .container -->
 </body>
 
 </html>
